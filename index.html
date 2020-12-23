@@ -321,8 +321,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             class="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-primary mb-4">
                             <i class="fas fa-pager"></i>
                         </div>
-                        <h3 class="font-weight-bolder">5</h3>
-                        <p class="text-gray">Websiten Erstellt</p>
+                        <h3 class="font-weight-bolder" id="insertdstats">5</h3>
+                        <p class="text-gray">Map downloads</p>
                     </div>
                     <div class="col-6 col-md-3 text-center">
                         <div
@@ -369,7 +369,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!-- Impact JS -->
         <script src="./front/assets/js/front.js"></script>
+<script>
+    $.ajax({
+        url: "https://api.countapi.xyz/get/mcbulder.de/7246819267931766116617271278",
+        type: "GET",
+        success: function (data) {
+            document.getElementById("insertdstats").innerHTML = data.value;
+        }
+    });
+    $.ajax({
+        url: "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCgrgTQfABLRmDtMaEjhthqQ&key=AIzaSyAiDEqhaDUdo9dMKfwKt-6GgtvRRwAXXNU",
+        type: "GET",
+        success: function (data) {
+            document.getElementById("displayabos").innerHTML = data.items[0].statistics.subscriberCount;
+        }
+    });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+<script>
+    var egg = new Egg("l,y,n,e,s", function () {
+        alert("🚨ALERT: SECRET FOUND! NOW DOWNLOAD MY MAPS!🚨")
+    }).listen();
 
+    var egg = new Egg("f,a,b,i", function () {
+        alert("🚨ALERT: Abonniere Fabian!🚨")
+    }).listen();
+</script>
 
 </body>
 
