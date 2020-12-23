@@ -1,146 +1,200 @@
-# 🏗️ Boilerplate for Nuxt, Tailwind & NetlifyCMS
+<h1 id="argon-design-system"><a href="https://www.creative-tim.com/product/vue-argon-design-system">Vue Argon Design System</a></h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cb2d4cc5-8a65-4940-81ce-4456ff96e6db/deploy-status)](https://app.netlify.com/sites/ntn-boilerplate/deploys) ← replace with [your own](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/general#deploy-status-badge)
+<p><img src="https://s3.amazonaws.com/creativetim_bucket/products/92/original/opt_argon_vue_thumbnail.jpg?1534236902" alt="Product Gif" /></p>
 
-**[Live Demo](https://ntn-boilerplate.netlify.app/)**
+<p>Start your development with a Design System for Bootstrap 4. It is open source, free and it features many components that can help you create amazing websites.</p>
 
-An opinionated starter template for a quick start with the following technologies up on a site after only 5 minutes!
+<h4 id="fully-coded-components">Fully Coded Components</h4>
 
-![NTN Boilerplate Screenshot](https://user-images.githubusercontent.com/770560/92640923-4a36fa80-f2de-11ea-8f96-a7bca7b1e0cc.png)
+<p>Vue Argon Design System is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files.</p>
 
-## 🔋 Batteries included
+<p>You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Design System is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.</p>
 
-- Vue 2
-- Vuex
-- Nuxt.js (in "universal mode", where both SEO and speed is great)
-- PostCSS (no SCSS)
-- Tailwind
-- PurgeCSS (removes unused CSS-selectors)
-- Dark mode & custom ColorModePicker (Set to "dark mode first")
-- PWA (install website as standalone app)
-- Netlify CMS (no need for a separate server)
-- Prettier
-- Subfont
+<p>Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.</p>
 
-##### Optional extra setup
-- Git LFS (store uploaded images outside the main repo)
-- Netlify LM (Netlify’s Git LFS support)
+<h4 id="complex-documentation">Complex Documentation</h4>
 
-## 🎉 Getting Started
+<p>Each element is well presented in a very complex documentation. You can read more about the idea behind this design system here. You can check the components here and the foundation here.</p>
 
-Use the deploy button to get your own copy of the repository.
+<h4 id="example-pages">Example Pages</h4>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/knogobert/ntn-boilerplate&stack=cms)
+<p>If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.</p>
 
-This will setup everything needed for running the CMS:
- - A new repository in your GitHub account with the code
- - Full Continuous Deployment to Netlify's global CDN network
- - Control users and access with Netlify Identity
- - Manage content with Netlify CMS
+<h2 id="table-of-contents">Table of Contents</h2>
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite. Start with by registering a regular email-account (not OAuth yet!) with a [generated password](https://passwordwolf.com/).
+<ul>
+  <li><a href="#demo">Demo</a></li>
+  <li><a href="#quick-start">Quick Start</a></li>
+  <li><a href="#documentation">Documentation</a></li>
+  <li><a href="#file-structure">File Structure</a></li>
+  <li><a href="#browser-support">Browser Support</a></li>
+  <li><a href="#resources">Resources</a></li>
+  <li><a href="#reporting-issues">Reporting Issues</a></li>
+  <li><a href="#technical-support-or-questions">Technical Support or Questions</a></li>
+  <li><a href="#licensing">Licensing</a></li>
+  <li><a href="#useful-links">Useful Links</a></li>
+</ul>
 
-You should be up and running, ready for personalization!
+<h2 id="demo">Demo</h2>
 
-### These extra steps are only necessary if you want to upload large media in Netlify CMS:
-This way it doesn't clutter up your repo with large unmanageable files. But *do know* that it is easier to add later than undoing it later.
+<ul>
+  <li><a href="https://demos.creative-tim.com/vue-argon-design-system">Index Page</a></li>
+  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/landing">Landing page</a></li>
+  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/profile">Profile Page</a></li>
+  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/login">Login Page</a></li>
+  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/register">Register Page</a></li>
+</ul>
 
-1. **[Install git-lfs](https://git-lfs.github.com/)** on your computer and remove the `#` in the project's `.gitattributes`
+<p><a href="https://demos.creative-tim.com/argon-design-system">View More</a></p>
 
-2. **Setup Netlify LM** by following [these steps](https://docs.netlify.com/large-media/setup/). (In short: `netlify plugins:install netlify-lm-plugin` → `netlify lm:install` → `netlify login` → `netlify link` → `netlify lm:setup` → commit the `.lfsconfig` file.)
+<h2 id="quick-start">Quick start</h2>
 
----
+<ul>
+  <li><a href="https://github.com/creativetimofficial/vue-argon-design-system/archive/master.zip">Download from Github</a>.</li>
+  <li><a href="https://www.creative-tim.com/product/vue-argon-design-system">Download from Creative Tim</a>.</li>
+  <li>Clone the repo: <code class="highlighter-rouge">git clone https://github.com/creativetimofficial/vue-argon-design-system.git</code>.</li>
+</ul>
 
-## Project commands
+<h2 id="documentation">Documentation</h2>
 
-1. 📦 Install dependencies.
+<p>The documentation for the Vue Argon Design System is hosted at our <a href="https://demos.creative-tim.com/vue-argon-design-system">website</a>.</p>
 
-```bash
-npm install
-```
+<h2 id="file-structure">File Structure</h2>
 
-2. 🏗 Run the project for local dev. This will start a hot-reloading server at `localhost:3000`.
+<p>Within the download you’ll find the following directories and files:</p>
 
-```bash
-npm run dev
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>argon/
+|-- vue-argon-design-system
+    |-- App.vue
+    |-- main.js
+    |-- router.js
+    |-- assets
+    |   |-- scss
+    |   |   |-- argon.scss
+    |   |   |-- bootstrap
+    |   |   |-- custom
+    |   |-- vendor
+    |       |-- font-awesome
+    |       |   |-- css
+    |       |   |   |-- font-awesome.css
+    |       |   |   |-- font-awesome.min.css
+    |       |   |-- fonts
+    |       |       |-- FontAwesome.otf
+    |       |       |-- fontawesome-webfont.eot
+    |       |       |-- fontawesome-webfont.svg
+    |       |       |-- fontawesome-webfont.ttf
+    |       |       |-- fontawesome-webfont.woff
+    |       |       |-- fontawesome-webfont.woff2
+    |       |-- nucleo
+    |           |-- css
+    |           |   |-- nucleo-svg.css
+    |           |   |-- nucleo.css
+    |           |-- fonts
+    |               |-- nucleo-icons.eot
+    |               |-- nucleo-icons.svg
+    |               |-- nucleo-icons.ttf
+    |               |-- nucleo-icons.woff
+    |               |-- nucleo-icons.woff2
+    |-- components
+    |   |-- Badge.vue
+    |   |-- BaseButton.vue
+    |   |-- BaseCheckbox.vue
+    |   |-- BaseInput.vue
+    |   |-- BaseNav.vue
+    |   |-- BaseRadio.vue
+    |   |-- BaseSlider.vue
+    |   |-- BaseSwitch.vue
+    |   |-- Card.vue
+    |   |-- CloseButton.vue
+    |   |-- Icon.vue
+    |   |-- NavbarToggleButton.vue
+    |-- layout
+    |   |-- AppFooter.vue
+    |   |-- AppHeader.vue
+    |-- plugins
+    |   |-- argon-kit.js
+    |   |-- globalComponents.js
+    |   |-- globalDirectives.js
+    |-- views
+        |-- Components.vue
+        |-- Landing.vue
+        |-- Login.vue
+        |-- Profile.vue
+        |-- Register.vue
+        |-- components
+            |-- BasicElements.vue
+            |-- Carousel.vue
+            |-- CustomControls.vue
+            |-- DownloadSection.vue
+            |-- Examples.vue
+            |-- Hero.vue
+            |-- Icons.vue
+            |-- Inputs.vue
+            |-- JavascriptComponents.vue
+            |-- Navigation.vue
 
-3. 🌌 Build the app for server-side rendered deployment. See more about **Universal SSR** in the [Nuxt.js docs](https://nuxtjs.org/guide#server-rendered-universal-ssr-).
+</code></pre></div></div>
 
-```bash
-npm run build
+<h2 id="browser-support">Browser Support</h2>
 
-# And to serve that deployment...
-npm run start
-```
+<p>At present, we officially aim to support the last two versions of the following browsers:</p>
 
-4. ⚡️ Generate a fully pre-rendered static site. See more [in the docs](https://nuxtjs.org/guide#static-generated-pre-rendering-).
+<p><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64" />
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64" />
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64" />
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64" />
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64" /></p>
 
-```bash
-npm run generate
-```
+<h2 id="resources">Resources</h2>
 
-### Personalize setup
+<ul>
+  <li>Demo: <a href="https://demos.creative-tim.com/argon-design-system">https://demos.creative-tim.com/vue-argon-design-system</a></li>
+  <li>Download: <a href="https://www.creative-tim.com/product/vue-argon-design-system">https://www.creative-tim.com/product/vue-argon-design-system</a></li>
+  <li>License Agreement: <a href="https://www.creative-tim.com/license">https://www.creative-tim.com/license</a></li>
+  <li>Support: <a href="https://www.creative-tim.com/contact-us">https://www.creative-tim.com/contact-us</a></li>
+  <li>Issues: <a href="https://github.com/creativetimofficial/vue-argon-design-system/issues">Github Issues Page</a></li>
+</ul>
 
-1. Copy and change the .env-file
+<h2 id="reporting-issues">Reporting Issues</h2>
 
-   - `cp .env-example .env`
-   - Then change the values
+<p>We use GitHub Issues as the official bug tracker for the Vue Argon Design System. Here are some advices for our users that want to report an issue:</p>
 
-2. Change the value on these lines
+<ol>
+  <li>Make sure that you are using the latest version of the Vue Argon Design System. Check the CHANGELOG from your copy on our <a href="https://www.creative-tim.com">website</a>.</li>
+  <li>Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.</li>
+  <li>Some issues may be browser specific, so specifying in what browser you encountered the issue might help.</li>
+</ol>
 
-   - `static/admin/config.yml:1` — `site_url`
-   - `static/admin/config.yml:2` — `logo_url`
-   - `assets/content/site/info.json` — `sitename`, `sitedescription` & `sitelang`
-   - `package.json:1` — `name`, `description`, `author` & `repository.url`
-   - `pages/index.vue` — The start page of your new website!
+<h2 id="technical-support-or-questions">Technical Support or Questions</h2>
 
-3. Change colors, favicon, content & content collections
+<p>If you have questions or need help integrating the product please <a href="https://www.creative-tim.com/contact-us">contact us</a> instead of opening an issue.</p>
 
-   - Colors are managed in `assets/scss/_vars.scss` & `tailwind.config.js`
-   - Favicon is generated by [@nuxt/pwa](https://pwa.nuxtjs.org/). You should change the `static/icon.png` to something new, and then match the new filename and source in `nuxt.config.js` under `pwa.icon`
-   - Content is managed mainly in [local Netlify CMS](http://localhost:3000/admin) by going to your `/admin` or by hand in `assets/content`
-   - Content collections are managed in `static/admin/config.yml`, then added to vuex store in `store/index.js`
+<h2 id="licensing">Licensing</h2>
 
-4. Change font
+<ul>
+  <li>
+    <p>Copyright © 2018 Creative Tim (https://www.creative-tim.com)</p>
+  </li>
+  <li>
+    <p>Licensed under MIT (https://github.com/creativetimofficial/vue-argon-design-system/blob/master/LICENSE.md)</p>
+  </li>
+</ul>
 
-   1. Add/change your font link in `nuxt.config.js` under `head.link`. You can add a `<link rel="stylesheet" href="font.css">` as `link: [{ rel: 'stylesheet', href: 'font.css' }]`, like [this](https://vue-meta.nuxtjs.org/api/#link)
-   2. Then append your font name in `tailwind.config.js` under `theme.extend.fontFamily.sans` (or other). Like `sans: ['Europa', ...defaultTheme.fontFamily.sans]`
-   3. Then if you've installed the included netlify plugin "[Subfont](https://github.com/Munter/netlify-plugin-subfont#readme)", it will automatically post-processes your web page to use an optimal font loading strategy.
+<h2 id="useful-links">Useful Links</h2>
 
-## More info
+<ul>
+  <li><a href="https://www.creative-tim.com/bootstrap-themes">More products</a> from Creative Tim</li>
+  <li><a href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w">Tutorials</a></li>
+  <li><a href="https://www.creative-tim.com/bootstrap-themes/free">Freebies</a> from Creative Tim</li>
+  <li><a href="https://www.creative-tim.com/affiliates/new">Affiliate Program</a> (earn money)</li>
+</ul>
 
-> This project was bootstrapped with `create-nuxt-app`. There are more detailed explanations of how everything works in the [Nuxt.js docs](https://nuxtjs.org).
+<h2 id="social-media">Social Media</h2>
 
-### Netlify Identity
-
-Make sure to set to "registration invite only" [here](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity#registration-preferences) if you don't want spam.
-
-When you create your first account, _don’t_ sign up using OAuth, generate a new password and sign in that way locally, otherwise a successful login will send you to the URL you typed in instead of keeping you on localhost.
-
----
-
-Originally based on [Henry Desroches' nuxt-netlify-cms-starter](https://github.com/xdesro/nuxt-netlify-cms-starter).
-
-Deployed easily with their boilerplate via:
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/xdesro/nuxt-netlify-cms-starter&stack=cms)
-
----
-
-## Troubleshooting
-
-- > I added a CSS class, but it doesn't show
-
-  - It is most likely purged by PurgeCSS, make sure it is whitelisted in `purgeCSS` in `nuxt.config.js`
-
-- > I tried logging into/saving in Netlify CMS, but I can't
-
-  - It may be that you haven't [enabled Netlify Identity](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity) or [setup the Git Gateway](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/identity#services) correctly, [check the docs](https://www.netlifycms.org/docs/git-gateway-backend/)
-
-- > This repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/pre-push.
-
-  - Install git-lfs then run `git lfs install` in project root
-
-- > I can’t get Git LFS to run correctly on Netlify
-
-  - Make sure that you have in your [Netlify build settings](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_SLUG/settings/deploys#environment-variables), set the environment variable `GIT_LFS_ENABLED` : `true`. Then also make sure that Netlify LM is setup as [their docs](https://docs.netlify.com/large-media/setup/) specify.
+<ul>
+  <li>Twitter: <a href="https://twitter.com/CreativeTim">https://twitter.com/CreativeTim</a></li>
+  <li>Facebook: <a href="https://www.facebook.com/CreativeTim">https://www.facebook.com/CreativeTim</a></li>
+  <li>Dribbble: <a href="https://dribbble.com/creativetim">https://dribbble.com/creativetim</a></li>
+  <li>Google+: <a href="https://plus.google.com/+CreativetimPage">https://plus.google.com/+CreativetimPage</a></li>
+  <li>Instagram: <a href="https://www.instagram.com/CreativeTimOfficial">https://www.instagram.com/CreativeTimOfficial</a></li>
+</ul>
