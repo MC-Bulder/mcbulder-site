@@ -439,6 +439,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div style="background-color: #F4F6FC;" class="card shadow-soft border-light">
+                            <div class="w-2/3 bg-cover card-header p-0"><img
+                                    src="./front/assets/img/maps/kaktusfarm.png" class="card-img-top rounded-top"
+                                    alt="image"></div>
+                            <div class="card-body">
+                                <h3 class="card-title mt-3">Minigames Network</h3>
+                                <p class="card-text">Dies ist ein Minigames Network, inspiriert von großen Servern.</p>
+                                </ul>
+                                <button onclick="givemap(2)" class="btn mb-2 mr-2 btn-gray" type="button"><i
+                                        class="lg:text-gray-300 text-gray-500 fa fa-download text-lg leading-lg mr-2"></i>Download</button>
+
+                                <!-- Infos -->
+                                <button type="button" class="btn mb-2 mr-2 btn-gray" data-toggle="modal"
+                                    data-target="#modal-default">
+                                    <i class="fas fa-info"></i> </button>
+                                <div class="modal fade" id="modal-default" tabindex="-1" role="dialog"
+                                    aria-labelledby="modal-default" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header align-items-center">
+                                                <h6 class="modal-title" id="modal-title-default">Minecraft Version:
+                                                    1.16.4</h6>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Diese Map besitzt Command Blöcke, und Funktioniert auch nur damit. Es ist ein Minigames Network aus Command Blöcken, und auch Funktions fähig.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Info End -->
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             </selction>
@@ -604,6 +643,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     hitmeonemortime();
                     if (nb == 0) window.location = src = './front/assets/maps/rsworld.zip';
                     else if (nb == 1) window.location = src = './front/assets/maps/kaktusfarm.zip';
+                    else if (nb == 2) window.location = src = './front/assets/maps/minigames.zip';
                 }
                 function hitmeonemortime() { $.ajax({ url: "https://api.countapi.xyz/hit/mcbulder.de/7246819267931766116617271278", type: "GET", success: function (data) { } }); }
             </script>
