@@ -328,8 +328,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </section>
 
-        <!-- Installations Schritte -->
 
+        <!-- Welten Download -->
+        <!--         <div class="py-6">
+                    <div class="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="w-2/3 bg-cover" style="background-image: url('./front/assets/img/maps/rsworld.png')">
+                        </div>
+                        <div class="w-2/3 p-4">
+                            <h1 class="text-gray-900 font-bold text-2xl">Redstone World</h1>
+                            <p class="mt-2 text-gray-600 text-sm">Mit Hilfe dieser Fabulösen Function kannst du wann immer du
+                                willst es
+                                nur für dich privat
+                                schneien lassen.<br> nimm das Klimawandel!</p>
+                            <div class="flex item-center justify-between mt-3">
+                                <button onclick="givemap(1)"
+                                    class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded w-full"><i
+                                        class="lg:text-gray-300 text-gray-500 fa fa-download text-lg leading-lg mr-2"></i>Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        <div class="row justify-content-center mb-5 mb-lg-6">
+            <div class="col-12 col-md-8 text-center">
+                <h1 class="display-3 mb-4">Welten Download</h1>
+                <p class="lead">Hier Kannst du meine Welten Downloaden.</p>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div style="background-color: #F4F6FC;" class="card shadow-soft border-light">
+                <div class="w-2/3 bg-cover card-header p-0"><img src="./front/assets/img/maps/rsworld.png"
+                        class="card-img-top rounded-top" alt="image"></div>
+                <div class="card-body">
+                    <h3 class="card-title mt-3">Redstone World 1.16.4</h3>
+                    <p class="card-text">Eine Simple welt, die sehr viel Redstone hat.</p>
+                    </ul>
+                    <button onclick="givemap(0)" class="btn mb-2 mr-2 btn-gray" type="button"><i
+                            class="lg:text-gray-300 text-gray-500 fa fa-download text-lg leading-lg mr-2"></i>Download</button>
+                </div>
+            </div>
+        </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div style="background-color: #F4F6FC;" class="card shadow-soft border-light">
+                        <div class="w-2/3 bg-cover card-header p-0"><img src="./front/assets/img/maps/kaktusfarm.png"
+                                class="card-img-top rounded-top" alt="image"></div>
+                        <div class="card-body">
+                            <h3 class="card-title mt-3">Kaktus Design 1.16.4</h3>
+                            <p class="card-text">Hier habt ihr eine Kaktus Farm als Design.</p>
+                            </ul>
+                            <button onclick="givemap(1)" class="btn mb-2 mr-2 btn-gray" type="button"><i
+                                    class="lg:text-gray-300 text-gray-500 fa fa-download text-lg leading-lg mr-2"></i>Download</button>
+                        </div>
+                    </div>
+                </div>
+
+
+        <!-- Installations Schritte -->
         <section class="section section-lg pt-0 line-bottom-light">
             <div class="container">
                 <div class="row justify-content-center mb-5 mb-lg-6">
@@ -461,39 +516,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </section>
 
-        <!-- Welten Download -->
-        <!--         <div class="py-6">
-            <div class="flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="w-2/3 bg-cover" style="background-image: url('./front/assets/img/maps/rsworld.png')">
-                </div>
-                <div class="w-2/3 p-4">
-                    <h1 class="text-gray-900 font-bold text-2xl">Redstone World</h1>
-                    <p class="mt-2 text-gray-600 text-sm">Mit Hilfe dieser Fabulösen Function kannst du wann immer du
-                        willst es
-                        nur für dich privat
-                        schneien lassen.<br> nimm das Klimawandel!</p>
-                    <div class="flex item-center justify-between mt-3">
-                        <button onclick="givemap(1)"
-                            class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded w-full"><i
-                                class="lg:text-gray-300 text-gray-500 fa fa-download text-lg leading-lg mr-2"></i>Download</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="col-12 col-md-6 col-lg-4 mb-5">
-            <div style="background-color:#bfc3cae1;" class="card shadow-soft border-light">
-                <div class="w-2/3 bg-cover card-header p-0"><img src="./front/assets/img/maps/rsworld.png"
-                        class="card-img-top rounded-top" alt="image"></div>
-                <div class="card-body">
-                    <h3 class="card-title mt-3">Redstone World 1.16.4</h3>
-                    <p class="card-text">Eine Simple welt, die Server viel Redstone hat.</p>
-                    </ul>
-                    <button onclick="givemap(0)" class="btn mb-2 mr-2 btn-gray" type="button"><i
-                            class="lg:text-gray-300 text-gray-500 fa fa-download text-lg leading-lg mr-2"></i>Download</button>
-                </div>
-            </div>
-        </div>
-
 
         <!-- Core -->
         <script src="./vendor/jquery/dist/jquery.min.js"></script>
@@ -517,7 +539,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             function givemap(nb) {
                 hitmeonemortime();
                 if (nb == 0) window.location = src = './front/assets/maps/rsworld.zip';
-                else if (nb == 1) window.location = 'https://drive.google.com/uc?export=download&id=1v-iqV2tepPhkHpoPCYvRwHLCdihomeiw';
+                else if (nb == 1) window.location = src = './front/assets/maps/kaktusfarm.zip';
             }
         </script>
 
