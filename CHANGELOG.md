@@ -1,11 +1,6 @@
-# Changelog
+# Change Log
 
-##[1.1.0] 2019-02-12
-- Package updates
-- SSR fixes for checkboxes and radio
-- IE fixes
-- Best practices & accessibility improvements + pwa support
-
-## [1.0.0] 2018-08-14
-Initial stable release
+## [1.0.0] 2020-09-29
 ### Original Release
+- Started project from [Tailwind Starter Kit by Creative Tim](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation?ref=nnjs-changelog)
+- Added design from Tailwind Starter Kit by Creative Tim

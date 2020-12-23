@@ -1,67 +1,88 @@
-/*
- ** TailwindCSS Configuration File
- **
- ** Docs: https://tailwindcss.com/docs/configuration
- ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
- */
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: {
+    enabled: true,
+    content: ["./**/*.html", "./*.html", "./**/*.js", "./*.js"],
+    options: {
+      whitelist: [],
+    },
+  },
   theme: {
-    darkSelector: '.dark-mode',
     extend: {
-      fontFamily: {
-        sans: ['Karla', ...defaultTheme.fontFamily.sans],
-        mono: [...defaultTheme.fontFamily.mono]
+      minHeight: {
+        "screen-75": "75vh",
       },
-      colors: {
-        primary: {
-          100: '#ECEFF5',
-          200: '#CBD2E1',
-          300: '#ABB6CD',
-          400: '#8C9AB7',
-          500: '#6F7FA0',
-          default: '#526488',
-          600: '#3E4F70',
-          700: '#2C3A57',
-          800: '#1C263B',
-          900: '#0D131E'
-        },
-        accent: {
-          100: '#F9E9EA',
-          200: '#EEC3C6',
-          300: '#E09FA4',
-          400: '#CF7D83',
-          500: '#BD5D65',
-          default: '#A84048',
-          600: '#8D2D34',
-          700: '#6E1D23',
-          800: '#4D1015',
-          900: '#280709'
-        }
+      fontSize: {
+        "55": "55rem",
       },
       opacity: {
-        '10': '0.1',
-        '20': '0.2'
-      }
+        "80": ".8",
+      },
+      zIndex: {
+        "2": 2,
+        "3": 3,
+      },
+      inset: {
+        "-100": "-100%",
+        "-225-px": "-225px",
+        "-160-px": "-160px",
+        "-150-px": "-150px",
+        "-94-px": "-94px",
+        "-50-px": "-50px",
+        "-29-px": "-29px",
+        "-20-px": "-20px",
+        "25-px": "25px",
+        "40-px": "40px",
+        "95-px": "95px",
+        "145-px": "145px",
+        "195-px": "195px",
+        "210-px": "210px",
+        "260-px": "260px",
+      },
+      height: {
+        "95-px": "95px",
+        "70-px": "70px",
+        "350-px": "350px",
+        "500-px": "500px",
+        "600-px": "600px",
+      },
+      maxHeight: {
+        "860-px": "860px",
+      },
+      maxWidth: {
+        "100-px": "100px",
+        "120-px": "120px",
+        "150-px": "150px",
+        "180-px": "180px",
+        "200-px": "200px",
+        "210-px": "210px",
+        "580-px": "580px",
+      },
+      minWidth: {
+        "140-px": "140px",
+        "48": "12rem",
+      },
+      backgroundSize: {
+        full: "100$",
+      },
     },
-    boxShadow: {
-      ...defaultTheme.boxShadow,
-      outline: '0 0 0 3px rgba(0, 86, 87,0.5)'
-    }
   },
-  variants: {
-    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover'],
-    borderColor: ['dark', 'dark-focus', 'dark-focus-within'],
-    textColor: ['dark', 'dark-hover', 'dark-active']
-  },
-  plugins: [require('tailwindcss-dark-mode')()],
-  purge: {
-    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: process.env.NODE_ENV === 'production',
-    content: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js', 'nuxt.config.js'],
-    options: {
-      // Set whitelist in nuxt.config.js -> purgeCSS.whitelist: ['dark-mode', 'light-mode', 'btn', 'icon']
-    }
-  }
-}
+  variants: [
+    "responsive",
+    "group-hover",
+    "focus-within",
+    "first",
+    "last",
+    "odd",
+    "even",
+    "hover",
+    "focus",
+    "active",
+    "visited",
+    "disabled",
+  ],
+  plugins: [require("@tailwindcss/custom-forms")],
+};
